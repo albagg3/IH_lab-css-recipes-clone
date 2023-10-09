@@ -5,5 +5,64 @@ h1, body, html, main {
 /*Import the font and set the default size*/
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-size: 18px;
+  font-weight:20;
+}
+
+
+.title{
+  color:white;
+  font-size: 4rem;
+  /* text-align:center; */
+  
+}
+header{
+  background-image: url("../images/soup.jpg");
+  height:600px;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+section{
+  padding: 30px 100px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+hr{
+  width:80%;
+}
+
+h2{
+  padding-bottom: 30px;
+}
+
+.receipe-info{
+  align-self: center;
+  width:50%;
+  padding-top: 30px;
+
+}
+
+ul{
+  list-style-type: '-';
+}
+
+.instructions{
+  padding-left: 10px;
+}
+
+ol { 
+  counter-reset: item;
+  list-style-type: none;
+}
+
+
+ol li:before { 
+    content: counter(item) ") "; 
+    counter-increment: item 
 }
